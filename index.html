@@ -11,20 +11,31 @@
       crossorigin="anonymous"
     />
     <!-- link css-->
+    <link rel="stylesheet" href="style.css" />
     <title>Weather</title>
   </head>
   <body>
-    <main>
+    <main class="weather">
       <div class="container">
         <div class="row">
           <div class="col-md-12 mt-5">
             <div class="current-weather text-center">
               <input
+                id="search-input"
                 class="weather-input w-50 mx-auto"
                 type="text"
                 placeholder="search your city"
               />
-              <button>search</button>
+              <button onclick="searchWeather()" class="search-btn">
+                search
+              </button>
+            </div>
+            <div class="show-display">
+              <div class="tempereture text-center">
+                <h1 id="city"></h1>
+                <h2 id="temperuture"></h2>
+                <p id="desc"></p>
+              </div>
             </div>
           </div>
         </div>
