@@ -8,3 +8,15 @@
   position: absolute;
   padding: 3px 15px;
 }
+.weather {
+  background-image: url(./images/sky.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  height: 100vh;
+}
+#spinner {
+  display: none;
+  text-align: center;
+}

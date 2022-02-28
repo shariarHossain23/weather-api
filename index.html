@@ -20,6 +20,7 @@
         <div class="row">
           <div class="col-md-12 mt-5">
             <div class="current-weather text-center">
+              <h1 class="text-white">Weather App</h1>
               <input
                 id="search-input"
                 class="weather-input w-50 mx-auto"
@@ -30,14 +31,23 @@
                 search
               </button>
             </div>
-            <div class="show-display">
-              <div class="tempereture text-center">
+            <div class="show-display text-center text-dark mt-4">
+              <div class="tempereture">
                 <h1 id="city"></h1>
                 <h2 id="temperuture"></h2>
                 <p id="desc"></p>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <div
+          id="spinner"
+          class="spinner-border text-danger text-center mx-auto"
+          role="status"
+        >
+          <span class="sr-only"></span>
         </div>
       </div>
     </main>
